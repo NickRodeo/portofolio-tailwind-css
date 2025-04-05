@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio EaN</title>
+    <link rel="stylesheet" href="final.css" />
+    <!-- font righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+      );
+    </script>
+  </head>
+  <body class="dark:bg-slate-900">
+    <!-- nav start -->
+    <header class="pt-2 pb-3 z-10 relative">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <!-- left -->
+          <a
+            href="#home"
+            class="self-center text-2xl bg-gradient-to-tr from-sky-200 to-sky-900 bg-clip-text text-transparent font-bold font-icon"
+            >EaN</a
+          >
+          <!-- right -->
+          <div class="z-10 self-center md:max-w-full">
+            <!-- hamburger -->
+            <button
+              class="self-center flex flex-col gap-y-1 cursor-pointer md:hidden"
+              id="hamburger"
+            >
+              <span
+                class="hamburger-line transition duration-400 origin-top-left"
+              ></span>
+              <span class="hamburger-line transition duration-400"></span>
+              <span
+                class="hamburger-line transition duration-400 origin-bottom-left"
+              ></span>
+            </button>
+            <!-- navigasi -->
+            <nav
+              class="absolute md:static top-full right-4 z-10 mt-2 scale-95 md:scale-100 opacity-0 md:opacity-100 -translate-y-2 md:translate-y-0 transition-all duration-300 ease-in-out pointer-events-none md:pointer-events-auto"
+            >
+              <ul
+                class="md:flex md:max-w-full md:gap-x-6 md:justify-center md:items-center max-w-48 rounded-lg md:rounded-none shadow-lg md:shadow-none bg-white dark:bg-slate-800 md:dark:bg-transparent md:bg-transparent px-12 md:px-4 py-4 md:pt-1 md:pb-3"
+              >
+                <li class="group transition duration-300 py-2 md:py-0">
+                  <a
+                    href="#home"
+                    class="whitespace-nowrap text-sm dark:text-slate-300 text-dark font-semibold group-hover:text-primary transition duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li class="group transition duration-300 py-2 md:py-0">
+                  <a
+                    href="#about"
+                    class="whitespace-nowrap text-sm dark:text-slate-300 text-dark font-semibold group-hover:text-primary transition duration-300"
+                    >About</a
+                  >
+                </li>
+                <li class="group transition duration-300 py-2 md:py-0">
+                  <a
+                    href="#skills"
+                    class="whitespace-nowrap text-sm dark:text-slate-300 text-dark font-semibold group-hover:text-primary transition duration-300"
+                    >My Skills</a
+                  >
+                </li>
+                <li class="group transition duration-300 py-2 md:py-0">
+                  <a
+                    href="#projects"
+                    class="whitespace-nowrap text-sm dark:text-slate-300 text-dark font-semibold group-hover:text-primary transition duration-300"
+                    >My Projects</a
+                  >
+                </li>
+                <li class="group transition duration-300 py-2 md:py-0">
+                  <a
+                    href="#contact"
+                    class="whitespace-nowrap text-sm dark:text-slate-300 text-dark font-semibold group-hover:text-primary transition duration-300"
+                    >Contact Me</a
+                  >
+                </li>
+                <li class="flex gap-x-3 py-4 md:py-0">
+                  <span
+                    class="text-sm dark:text-slate-300 text-dark font-semibold"
+                    >Light</span
+                  >
+                  <input
+                    type="checkbox"
+                    name="dark-toggle"
+                    class="hidden"
+                    id="dark-toggle"
+                  />
+                  <label for="dark-toggle">
+                    <div
+                      class="rounded-full cursor-pointer bg-primary dark:bg-dark w-10 h-5"
+                    >
+                      <div
+                        class="w-5 h-5 bg-white rounded-full transition duration-300 ball"
+                      ></div>
+                    </div>
+                  </label>
+                  <span
+                    class="text-sm text-dark dark:text-slate-300 font-semibold"
+                    >Dark</span
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- nav end -->
+    <!-- hero start -->
+    <section id="home" class="pt-10 lg:px-5 bg-white dark:bg-slate-900">
+      <div class="container mx-auto mb-10 md:mb-15 sm:rounded-xl shadow-lg">
+        <div class="flex flex-wrap">
+          <!-- left -->
+          <div class="px-4 py-3 max-w-full md:max-w-1/2 md:self-center">
+            <h1 class="text-sm text-dark mb-1 dark:text-slate-300">
+              Hi 👋, My Name is
+              <span class="block text-3xl font-bold"
+                >Raihan
+                <span
+                  class="bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent"
+                  >Fadhillah</span
+                ></span
+              >
+            </h1>
+            <span class="dark:text-slate-300 mr-3 text-sm text-dark font-medium"
+              >Web Developer</span
+            >
+            <span class="dark:text-slate-300 mr-3 text-sm text-dark font-medium"
+              >Programmer</span
+            >
+            <span class="dark:text-slate-300 mr-3 text-sm text-dark font-medium"
+              >Major Student</span
+            >
+            <p class="text-base dark:text-slate-300 text-dark font-thin mt-3">
+              Lagi asik ngoding dan ngulik desain biar bikin web yang nggak cuma
+              jalan, tapi juga enak dilihat. Sambil belajar, sambil berkarya.
+              Yuk, kenalan!
+            </p>
+            <a
+              href="#"
+              class="mt-4 px-4 py-2 bg-primary font-medium text-white text-base rounded-2xl shadow-lg inline-block hover:bg-sky-300 transition duration-300"
+              >Get in Touch</a
+            >
+          </div>
+          <!-- right -->
+          <div class="max-w-full mx-auto md:max-w-1/2 overflow-hidden">
+            <img src="img/me.png" width="300px" height="300px" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+    <!-- about start -->
+    <section id="about" class="py-30 lg:px-5 bg-white dark:bg-slate-900">
+      <div class="container mx-auto text-center md:text-start">
+        <div class="flex flex-wrap">
+          <!-- left -->
+          <div class="px-4 py-3 max-w-full md:max-w-1/2">
+            <h3 class="text-base text-dark font-medium dark:text-slate-300">
+              About Me
+            </h3>
+            <h1
+              class="mb-2 text-3xl font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent"
+            >
+              Get to Know Me Well!
+            </h1>
+            <p class="text-base dark:text-slate-300 text-dark font-thin">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              distinctio impedit voluptatibus itaque tenetur quo, sapiente quae
+              natus!
+            </p>
+          </div>
+          <!-- right -->
+          <div class="mt-10 md:mt-0 px-4 py-3 max-w-full md:max-w-1/2">
+            <h1 class="text-lg font-bold text-primary">Let's Be a Friend</h1>
+            <p class="text-base font-thin text-dark mb-7 dark:text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              quis eum cupiditate ducimus porro debitis fuga!
+            </p>
+            <div
+              class="flex flex-wrap justify-evenly bg-slate-100 dark:bg-slate-800 shadow-lg rounded-lg px-2 py-3"
+            >
+              <div class="w-7 h-7 group">
+                <a href="#">
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-gray-700 dark:fill-gray-500 group-hover:fill-pink-400 transition duration-300"
+                  >
+                    <title>Instagram</title>
+                    <path
+                      d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-7 h-7 group">
+                <a href="#">
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-gray-700 dark:fill-gray-500 group-hover:fill-red-500 transition duration-300"
+                  >
+                    <title>YouTube</title>
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-7 h-7 group">
+                <a href="#">
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-gray-700 dark:fill-gray-500 group-hover:fill-blue-500 transition duration-300"
+                  >
+                    <title>Facebook</title>
+                    <path
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+    <!-- skills start -->
+    <section
+      id="skills"
+      class="pt-15 pb-10 bg-slate-800 dark:bg-slate-700 lg:px-5"
+    >
+      <div class="container mx-auto text-center px-4">
+        <h3 class="text-base text-slate-100 dark:text-slate-300 font-medium">
+          My Skills
+        </h3>
+        <h1
+          class="my-2 text-2xl md:text-3xl font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent"
+        >
+          Skills That i've Been Learned
+        </h1>
+        <p class="text-base text-slate-100 dark:text-slate-300 font-thin">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          expedita molestias architecto saepe dignissimos?
+        </p>
+        <div class="my-10 grid grid-cols-5 md:grid-cols-10 gap-x-5 gap-y-8">
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>HTML5</title>
+              <path
+                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>CSS</title>
+              <path
+                d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>JavaScript</title>
+              <path
+                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>PHP</title>
+              <path
+                d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>C++</title>
+              <path
+                d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>Bootstrap</title>
+              <path
+                d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>Tailwind CSS</title>
+              <path
+                d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>Laravel</title>
+              <path
+                d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 01-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978L16.21 7.087 14.63 6.18v4.283l2.182 1.256 1.58.908zm-8.65 9.654l5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>Unity</title>
+              <path
+                d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"
+              />
+            </svg>
+          </div>
+          <div class="group">
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="group-hover:fill-primary transition duration-300 cursor-pointer"
+            >
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills end -->
+    <!-- projects start -->
+    <section
+      id="projects"
+      class="bg-slate-100 dark:bg-slate-800 max-w-full pt-10 pb-15 lg:px-5"
+    >
+      <div class="my-10 mx-auto container text-center md:my-15 px-4">
+        <h3 class="text-base text-dark dark:text-slate-300 font-medium">
+          My Projects
+        </h3>
+        <h1
+          class="my-2 text-2xl md:text-3xl font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent"
+        >
+          Journey of My Web Development
+        </h1>
+        <p class="text-base text-dark dark:text-slate-300 font-thin">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          expedita molestias architecto saepe dignissimos?
+        </p>
+        <div class="flex flex-wrap mt-5 justify-center gap-x-5 xl:gap-x-20">
+          <div
+            class="dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden max-w-full md:max-w-[320px] lg:max-w-[450px] my-5 lg"
+          >
+            <div class="max-h-full overflow-hidden">
+              <a href="https://nickrodeo.github.io/Film/" target="_blank">
+                <img
+                  src="img/project.png"
+                  alt="project"
+                  class="hover:scale-110 transition duration-500 cursor-pointer"
+                />
+              </a>
+            </div>
+            <div class="pt-4 pb-6 px-3">
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="group"
+                target="_blank"
+              >
+                <h3
+                  class="mb-2 text-primary group-hover:text-sky-300 transition duration-300 text-xl font-semibold"
+                >
+                  Movie Website with OMDB Api
+                </h3>
+              </a>
+              <p class="dark:text-slate-300 mb-5 font-thin text-base text-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                enim illum doloribus iusto culpa.
+              </p>
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="bg-primary px-3 py-2 rounded-xl shadow-lg text-white font-semibold text-medium hover:bg-sky-300 transition duration-300"
+                target="_blank"
+                >Go to Website</a
+              >
+            </div>
+          </div>
+          <div
+            class="dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden max-w-full md:max-w-[320px] lg:max-w-[450px] my-5"
+          >
+            <div class="max-h-full overflow-hidden">
+              <a href="https://nickrodeo.github.io/Film/" target="_blank">
+                <img
+                  src="img/project.png"
+                  alt="project"
+                  class="hover:scale-110 transition duration-500 cursor-pointer"
+                />
+              </a>
+            </div>
+            <div class="pt-4 pb-6 px-3">
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="group"
+                target="_blank"
+              >
+                <h3
+                  class="mb-2 text-primary group-hover:text-sky-300 transition duration-300 text-xl font-semibold"
+                >
+                  Movie Website with OMDB Api
+                </h3>
+              </a>
+              <p class="dark:text-slate-300 mb-5 font-thin text-base text-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                enim illum doloribus iusto culpa.
+              </p>
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="bg-primary px-3 py-2 rounded-xl shadow-lg text-white font-semibold text-medium hover:bg-sky-300 transition duration-300"
+                target="_blank"
+                >Go to Website</a
+              >
+            </div>
+          </div>
+          <div
+            class="dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden max-w-full md:max-w-[320px] lg:max-w-[450px] my-5"
+          >
+            <div class="max-h-full overflow-hidden">
+              <a href="https://nickrodeo.github.io/Film/" target="_blank">
+                <img
+                  src="img/project.png"
+                  alt="project"
+                  class="hover:scale-110 transition duration-500 cursor-pointer"
+                />
+              </a>
+            </div>
+            <div class="pt-4 pb-6 px-3">
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="group"
+                target="_blank"
+              >
+                <h3
+                  class="mb-2 text-primary group-hover:text-sky-300 transition duration-300 text-xl font-semibold"
+                >
+                  Movie Website with OMDB Api
+                </h3>
+              </a>
+              <p class="dark:text-slate-300 mb-5 font-thin text-base text-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                enim illum doloribus iusto culpa.
+              </p>
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="bg-primary px-3 py-2 rounded-xl shadow-lg text-white font-semibold text-medium hover:bg-sky-300 transition duration-300"
+                target="_blank"
+                >Go to Website</a
+              >
+            </div>
+          </div>
+          <div
+            class="dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden max-w-full md:max-w-[320px] lg:max-w-[450px] my-5"
+          >
+            <div class="max-h-full overflow-hidden">
+              <a href="https://nickrodeo.github.io/Film/" target="_blank">
+                <img
+                  src="img/project.png"
+                  alt="project"
+                  class="hover:scale-110 transition duration-500 cursor-pointer"
+                />
+              </a>
+            </div>
+            <div class="pt-4 pb-6 px-3">
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="group"
+                target="_blank"
+              >
+                <h3
+                  class="mb-2 text-primary group-hover:text-sky-300 transition duration-300 text-xl font-semibold"
+                >
+                  Movie Website with OMDB Api
+                </h3>
+              </a>
+              <p class="dark:text-slate-300 mb-5 font-thin text-base text-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                enim illum doloribus iusto culpa.
+              </p>
+              <a
+                href="https://nickrodeo.github.io/Film/"
+                class="bg-primary px-3 py-2 rounded-xl shadow-lg text-white font-semibold text-medium hover:bg-sky-300 transition duration-300"
+                target="_blank"
+                >Go to Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects end -->
+    <!-- contact start -->
+    <section
+      id="contact"
+      class="bg-white dark:bg-slate-900 max-w-full py-10 lg:px-5"
+    >
+      <div class="my-10 mx-auto container text-center md:my-15 px-4">
+        <h3 class="text-base text-dark dark:text-slate-300 font-medium">
+          Contact Me
+        </h3>
+        <h1
+          class="my-2 text-2xl md:text-3xl font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent"
+        >
+          Feedback and Message
+        </h1>
+        <p class="text-base dark:text-slate-300 text-dark font-thin">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          incidunt?
+        </p>
+        <div class="mt-10">
+          <form class="mx-auto max-w-full md:max-w-2/3">
+            <label
+              for="name"
+              class="text-primary font-semibold text-base text-start block mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              class="text-dark font-medium text-base mb-6 w-full dark:bg-slate-500 dark:text-slate-300 bg-slate-200 p-2 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-primary transition duration-300"
+            />
+            <label
+              for="email"
+              class="text-primary font-semibold text-base text-start block mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="text-dark font-medium text-base mb-6 w-full dark:bg-slate-500 dark:text-slate-300 bg-slate-200 p-2 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-primary transition duration-300"
+            />
+            <label
+              for="message"
+              class="text-primary font-semibold text-base text-start block mb-2"
+              >Message</label
+            >
+            <textarea
+              name="message"
+              class="text-dark font-medium text-base h-40 mb-6 w-full dark:text-slate-300 dark:bg-slate-500 bg-slate-200 p-2 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-primary transition duration-300"
+            ></textarea>
+            <button
+              type="submit"
+              class="text-white text-base font-semibold bg-primary hover:bg-sky-300 p-3 rounded-full shadow-lg w-full cursor-pointer"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+    <!-- footer start -->
+    <footer class="pt-15 bg-slate-950">
+      <div class="container mx-auto px-15">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div class="py-5 px-3">
+            <h1 class="text-3xl font-bold text-slate-200 mb-3">Contact</h1>
+            <h3 class="text-md mb-2 font-semibold text-white">
+              wadidaw@gmail.com
+            </h3>
+            <h3 class="text-md mb-2 font-semibold text-white">Pontianak</h3>
+            <h3 class="text-md mb-2 font-semibold text-white">08123456789</h3>
+          </div>
+          <div class="py-5 px-3">
+            <h1 class="font-semibold text-slate-200 text-xl mb-5">Category</h1>
+            <ul class="text-white flex flex-col gap-y-4">
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#"
+                  >Web Developer</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#"
+                  >Programmer</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#"
+                  >College</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="py-5 px-3">
+            <h1 class="font-semibold text-slate-200 text-xl mb-5">Content</h1>
+            <ul class="text-white flex flex-col gap-y-4">
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#skills"
+                  >Skills</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="group-hover:text-primary transition duration-300"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t-2 border-t-slate-700 pt-2">
+          <div
+            class="flex flex-wrap gap-x-10 justify-center max-w-sm shadow-lg rounded-lg px-2 py-3 mx-auto"
+          >
+            <div class="w-7 h-7 group">
+              <a href="#">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-gray-700 group-hover:fill-pink-400 transition duration-300"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="w-7 h-7 group">
+              <a href="#">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-gray-700 group-hover:fill-red-500 transition duration-300"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="w-7 h-7 group">
+              <a href="#">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-gray-700 group-hover:fill-blue-500 transition duration-300"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="text-xs text-slate-100 mt-5">
+              Made by
+              <a
+                href="#"
+                target="_blank"
+                class="font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent hover:opacity-75 transition duration-300"
+                >Raihan Fadhillah</a
+              >
+              with
+              <a
+                href="https://tailwindcss.com"
+                target="_blank"
+                class="font-bold text-sky-500 hover:opacity-75 transition duration-300"
+                >Tailwind CSS</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- up button start -->
+    <div
+      id="up-button"
+      class="rounded-full fixed bottom-5 right-5 bg-primary w-13 h-13 flex justify-center items-center opacity-0 transition duration-500 hover:animate-pulse"
+    >
+      <a href="#">
+        <svg
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          width="30px"
+          height="30px"
+        >
+          <title>Upptime</title>
+          <path
+            d="M11.86 15.68c1.926 0 3.489 1.526 3.489 3.406 0 1.88-1.563 3.407-3.488 3.407-1.926 0-3.489-1.526-3.489-3.407 0-1.88 1.563-3.407 3.489-3.407ZM24 14.884 12 1.507 0 14.885l3.158 3.52L12 8.548l8.842 9.857L24 14.885Z"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- up button end -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.1",
+    "tailwindcss": "^4.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
+}
